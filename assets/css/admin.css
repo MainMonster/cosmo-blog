@@ -1,0 +1,254 @@
+*{font-family: 'Advent Pro', sans-serif;
+   
+   
+  }
+  html,
+  h1,h2,h3,h4,h5,h6 {
+  }
+  body {
+   background: #726868 !important;
+ 
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  margin: 0;
+  padding: 0;
+  }
+  .container{
+      flex: 1;
+  }
+  a{
+     text-decoration: none ;
+     color: inherit !important;
+  }
+  input{
+      pudding: 10px 12px;
+      display: block;
+      width: 100%;
+      border-radius: 3px;
+      border: 1px solid #ececec;
+      line-height: 1.5rem;
+      color: #444444;
+      font-weight: 500;
+  }
+  
+  /* HEADER */
+  header{
+      background: #463550;
+      height: 70px;
+      
+  }
+  header * {
+      color: beige;
+      
+  }
+  header h2{
+      margin-top: 15px;
+  }
+  header h2 a:hover{
+      font-size: 2.5rem !important;
+  }
+  header h2 a{
+      text-decoration: none !important;
+      font-size: 2.5rem !important;
+  }
+  header ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      float: right;
+  }
+  header ul li{
+  float: left;
+  position: relative;
+  }
+  header ul li a{
+      display: block;
+      font-size: 1.2rem;
+      text-decoration: none;
+      padding: 20px;
+  }
+  header ul li a:hover{
+      background:  rgb(121, 111, 111);
+      transition: .3s;
+      color: #fff;
+  }
+  header ul li ul{
+      position: absolute;
+      top: 70px;
+      right: 0px;
+      width: 200px;
+      display: none;
+      z-index: 10;
+  }
+  header ul li:hover ul{
+      display: block;
+  }
+  header ul li ul li{
+      width: 100%;
+  
+  }
+  header ul li ul li a{
+      padding: 10px;
+      background:  #726868;
+     
+  }
+
+  /*  SIDEBAR */
+.sidebar{
+    background-color: antiquewhite;
+    color: #444444;
+    font-weight: 700;
+    margin: 1rem 0;
+    min-height: 50vh;
+   
+    
+}
+.sidebar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #444444;
+
+}
+.sidebar ul a{
+    padding: 13px;
+    display: block;
+    border-bottom: 1px solid #444444;
+}
+.sidebar ul a:hover{
+    padding-left: 50px;
+    transition: .3s;
+}
+
+.posts{
+    height: 100%;
+    padding: 20px 100px 100px;
+    /* overflow-y: scroll; */
+   color: beige;
+}
+.posts .button{
+    margin: 0 0 20px 0; 
+}
+.posts h3{
+    text-align: center;
+}
+.posts .title-table {
+    padding: 13px;
+    text-align: left;
+    border-bottom: 1px solid #444444;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.posts .post{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #5f5757;
+}
+.posts .post .edit{
+    color: rgb(116, 218, 116);
+}
+.posts .post .delete{
+    color: rgb(233, 111, 111)
+}
+.add-post form{
+    margin: 1.5rem 0 0 0;
+
+}
+.form-select{
+   margin-bottom: 10px;
+}
+.ck-editor__main {
+    color: #444444;}
+ /* footer */
+.footer{
+    background: #5f5757;
+    position: relative;
+    color: beige;
+    }
+    .footer .footer-section{
+    padding: 22px;
+    }
+    .footer h4, .footer h3{
+        color:white;
+    }
+    .footer .about .contact span {
+        display: block;
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+    .footer .about .socials a{
+        border: 1px solid grey;
+        width: 45px;
+        height: 41px;
+        padding-top: 5px;
+        margin-right: 5px;
+        text-align: center;
+        display: inline-block;
+        font-size: 1.3em;
+        border-radius: 5px;
+        transition: .5s;
+        color: beige;
+    }
+    .footer .about .socials a:hover{
+        border: 1px solid white;
+        color: white;
+        transition: .3s;
+    }
+    
+    .footer .links ul a{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        transition: .3s;
+        color: #bebebe;
+        text-decoration: none;
+    
+    
+    }
+    .footer .links ul a:hover{
+        color: white;
+        margin-left: 15px;
+        transition:  .3s;
+    }
+    .footer .contact-form .contact-input{
+        background: #f5f4f4;
+        color: #bebdbd;
+        margin-bottom: 10px;
+        line-height: 1.5rem;
+        padding: .9rem 1.4rem;
+        border: none;
+        width: 100%;
+    }
+    
+    .footer .contact-form .contact-input:focus{
+        background: #1a1a1a;
+    }
+    .footer .contact-form .contact-btn{
+        float: right;
+        font-size: 1.1em;
+        color: beige;
+        
+    }
+    .footer .footer-bottom{
+        background: #5f5757;
+        color: #bebebe;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    .errmsg{
+        color: rgb(239, 119, 119);
+        font-weight: 500;
+        font-style: italic;
+        text-align: center;
+        list-style-type: none;
+    }
+    .assent{
+        color: yellowgreen;
+        font-weight: 400;
+        font-style: italic;
+        text-align: center;
+    }
